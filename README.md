@@ -1,4 +1,4 @@
-# Challenge 3 - Personal Portfolio
+# Challenge 3 - Personal Portfolio  :heavy_check_mark:
 
 <!-- Front Matter -->
 Challenge Completo del programa ONE (Oracle Next Education) junto a #Alura :raised_hands:
@@ -9,6 +9,6 @@ Challenge Completo del programa ONE (Oracle Next Education) junto a #Alura :rais
 El desafío consiste en construir un sitio web para demostrar nuestro propio Portfolio.
 
 Conceptos Desarrollados:
-- CssGrid, FlexBox, Animacion en Css
-- Experiencia UI
-- Lógica con Js
+- CssGrid, FlexBox, Animacion en Css :triangular_ruler:
+- Experiencia UI :globe_with_meridians:
+- Lógica con Js :high_brightness: 
