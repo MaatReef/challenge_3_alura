@@ -1,7 +1,7 @@
 # Challenge 3 - Personal Portfolio
 
 <!-- Front Matter -->
-Challenge Completo del programa ONE (Oracle Next Education) junto a #Alura
+Challenge Completo del programa ONE (Oracle Next Education) junto a #Alura :raised_hands:
 
 ---
 
