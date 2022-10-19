@@ -1,0 +1,1547 @@
+/*GENERALES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Ubuntu:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bk: #000;
+    --color-bk-200-: #333333;
+    --color-bk-400-: #666666;
+    --color-wt: #fff;
+    --color-wt-200: #cccccc;
+    --color-wt-400: #999999;
+    --color-pc-0: #7D5A50;
+    --color-pc-200: #644840;
+    --color-pc-400: #4b3630;
+    --color-pc-200-: #977b73;
+    --color-pc-400-: #b19c96;
+    --color-sc-0: #D8AC9C;
+    --color-sc-200: #ad8a7d;
+    --color-sc-400: #050505;
+    --color-sc-200-: #e0bdb0;
+    --color-sc-400-: #e8cdc4;
+    font-family: 'Poppins', 'Manrope', 'Ubuntu', sans-serif;
+}
+
+body {
+    background: var(--color-wt-400);
+}
+
+
+/*/////////////////*/
+/*/////////////////*/
+/*Boton de regreso Arriba*/
+
+.btn-volver-arriba {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--color-bk-200-);
+    border-radius: 30%;
+    position: fixed;
+    bottom: 68px;
+    right: 16px;
+    z-index: 99999;
+    margin-right: -60px;
+    transition: all .4s ease;
+}
+
+.btn-volver-arriba a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.btn-volver-arriba a i {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 40px;
+}
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/*Boton wpp*/
+
+.contact {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: var(--color-bk-200-);
+    border-radius: 30%;
+    position: fixed;
+    left: 16px;
+    bottom: 68px;
+    z-index: 999999;
+    margin-left: -60px;
+    transition: all .4s ease;
+}
+
+.contact .wpp {
+    float: left;
+    clear: left;
+    margin: 6px;
+    max-width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    border-style: none;
+}
+
+.contact .wpp:hover {
+    transform: scale(1.5) rotate(1turn);
+    transition: all 0.7s ease-in-out;
+}
+
+
+/*////////Mobile First/////////*/
+
+
+/*/////////////////*/
+
+
+/* ------ ENCABEZADO ------ */
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/*Menú bar Pc*/
+
+.menu-bar-pc {
+    width: 100%;
+    min-height: 68px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0 36px;
+    background: var(--color-pc-400);
+    display: none;
+    z-index: 99;
+}
+
+.menu-bar-pc .menu-principal {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-wt);
+}
+
+.menu-bar-pc .menu-principal a {
+    color: var(--color-wt);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 0;
+    animation: slide_right 0.5s linear forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translatex(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.menu-bar-pc .menu-principal a:hover {
+    color: var(--color-pc-400-);
+    text-decoration: none;
+}
+
+.menu-bar-pc a {
+    margin: 0px 5px;
+}
+
+.menu-bar-pc .logo-mini-fix img {
+    width: 9%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+/*Mobile menu*/
+
+.menu-mobile {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 5px 18px;
+    background: var(--color-pc-400);
+    color: var(--color-pc-400);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.menu-mobile .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-mobile .barra .logo-mini img {
+    width: 15%;
+}
+
+.menu-mobile .barra a i {
+    font-size: 1.4rem;
+    color: var(--color-sc-200);
+}
+
+.menu-mobile .menu-principal {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 72px;
+    left: -100%;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+    border-right: 1px solid rgba(204, 204, 204, 0.5);
+    box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
+    background: var(--color-pc-400);
+    text-align: center;
+}
+
+.menu-mobile .menu-principal a {
+    display: block;
+    padding: 10px;
+    color: #444444;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.5);
+}
+
+.menu-mobile .menu-principal a:hover {
+    background: var(--color-pc-400);
+}
+
+.menu-mobile .menu-principal a {
+    display: flex;
+    padding: 8px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.876rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease;
+}
+
+.menu-mobile .menu-principal a:last-child {
+    padding-right: 0;
+}
+
+
+/*/////////////////*/
+
+
+/* ------ MAIN ------ */
+
+
+/*Banner principal*/
+
+
+/*/////////////////*/
+
+.main {
+    width: 100%;
+    margin-top: -5px;
+    height: 40rem;
+}
+
+.main .inicio {
+    background: var(--color-sc-200-);
+}
+
+.main .inicio .welcome {
+    width: 100%;
+    padding: 220px 0px 0px 90px;
+    width: 100%;
+    height: 120vh;
+    background: var(--color-sc-200-);
+    margin-top: -4.5rem;
+}
+
+.main .inicio .welcome h1 {
+    font-size: 4em;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-bk-200-);
+    opacity: 0;
+    animation: slide_left 0.5s linear forwards;
+    animation-delay: 0.7s;
+}
+
+/* Icono de Precarga */
+#contenedor_carga{
+    background-image: url(../img/banner.png);
+    background-color: var(--color-pc-0);
+    /* background: var(--color-sec); */
+    background: linear-gradient(196deg, var(--color-pc-0) 0%, var(--color-pc-200) 0%, var(--color-pc-400) 31%, var(--color-pc-400) 63%, var(--color-pc-200) 88%);
+    
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    /* transition: all 1s ease; */
+    z-index: 100000;
+}
+
+#carga{
+    border: 15px solid #ccc;
+    border-top-color: var(--color-sec-tinte);
+    border-top-style: groove;
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-animation: girar 1.5s linear infinite;
+    -o-animation: girar 1.5s linear infinite;
+    animation: girar 1.5s linear infinite;
+    background-image: url(../img/logotipo.png);
+}
+.cargando{
+    background-image: url(../img/logotipo.png);
+
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 20px;
+    bottom: -276px;
+    font-size: 20px;
+    margin: auto;
+}
+.ocultar{
+    visibility: hidden;
+}
+
+@keyframes girar {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+
+}
+
+@keyframes slide_left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.main .inicio .welcome h2 {
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-pc-0);
+    opacity: 0;
+    animation: slide_right 0.5s linear forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slide_right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.main .inicio .welcome p {
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+    opacity: 0;
+    animation: slide_left 0.5s linear forwards;
+    animation-delay: 1.3s;
+}
+
+@keyframes slide_left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.main img {
+    width: 100%;
+    height: 50vh;
+    margin-top: 144px;
+    opacity: 0;
+    animation: fade_in 1s linear forwards;
+    animation-delay: 0.7s;
+}
+
+.main h2{
+    opacity: 0;
+    animation: fade_in 1s linear forwards;
+    animation-delay: 0.7s;
+}
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main .banner-principal {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+    background: var(--color-sc-200-);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main .banner-principal .texto-banner {
+    display: inline-block;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main .banner-principal .texto-banner .logos {
+    width: 100%;
+    margin-bottom: 20px;
+    z-index: 99;
+}
+
+.main .banner-principal .texto-banner a {
+    font-weight: 10;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 38px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    opacity: 0;
+    background: var(--color-pc-200);
+    color: var(--color-wt);
+    border: solid 1px black;
+    transition: all .7s ease;
+    animation: slide_top 0.5s linear forwards;
+    animation-delay: 1.3s;
+}
+
+@keyframes slide_top {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.main .banner-principal .texto-banner a:hover {
+    background: var(--color-pc-400);
+    color: var(--color-wt);
+}
+
+
+/*/////////////////*/
+
+
+/** Menu Desplegable - PASADO - PRESENTE FUTURO **/
+
+
+/*/////////////////*/
+
+#servicios .card-header {
+    background-color: var(--color-sc-200-);
+    padding: 0 1.25rem;
+}
+
+#servicios .card-header .btn-link {
+    color: var(--color-ct);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+}
+
+#servicios .card-body {
+    font-size: 1.3rem;
+    background-color: var(--color-sc-400-);
+}
+
+.acerca_de {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-pc-400);
+}
+
+.acerca-de .card h5,
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.acerca-de .contenido-principal .linea_temporal {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+    padding-top: 40px;
+}
+
+.acerca-de .contenido-principal .sidebar h3,
+.acerca-de .contenido-principal .sidebar p {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+}
+
+
+/** Boton ver - Dentro de la sección Presente **/
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-body .btn-light {
+
+    font-weight: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 4px 22px;
+    background: var(--color-pc-200);
+    color: var(--color-wt);
+    border: solid 1px black;
+    transition: all .7s ease;
+}
+
+
+/** Sección de Logos -**/
+
+.acerca-de .logos {
+    background-color: var(--color-bt);
+    padding-top: 40px;
+    
+}
+
+.acerca-de .logos img {
+    width: 100%;
+    height: 100px;
+    padding: 5px 5px;
+    margin: 12px 0px 12px 0px;
+}
+
+.acerca-de img:hover {
+    transform: scale(1.5);
+    transition: all 0.7s ease-in-out;
+}
+
+
+/** Boton Contactame - Debajo de los logos **/
+
+.logos .descubre-mas {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: table;
+    padding: 8px 20px;
+    transition: all .7s ease;
+    background: var(--color-sc-0);
+    color: var(--color-bk);
+    border: 1px solid;
+}
+
+.logos .descubre-mas:hover {
+    background-color: var(--color-sc-200);
+}
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/* Slider o Carousel principal - Con proyectos**/
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+.carousel-principal {
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 113vh;
+    background-color: var(--color-sc-200-);
+}
+
+.carousel-principal .content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carousel-principal .carousel {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-principal h3,
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-bk);
+}
+
+
+/* Boton Ver - Dentro del Slider**/
+
+.carousel-principal .carousel-inner .carousel-item .btn-light {
+    font-weight: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px 16px;
+    background: var(--color-pc-200);
+    color: var(--color-wt);
+    border: solid 1px black;
+    transition: all .7s ease;
+}
+
+.carousel-principal .carousel-inner .carousel-item .btn-light:hover {
+    background: var(--color-pc-400);
+    color: var(--color-wt);
+}
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/* Grid */
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+.grid-principal {
+    height: auto;
+    width: 100%;
+    background-color: var(--color-pc-400);
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.grid-principal h3 {
+    padding: 32px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+}
+
+.grid-principal .card-columns {
+    height: 90%;
+    margin-bottom: 50px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.grid-principal .card {
+    height: auto;
+    background-color: var(--color-pc-400);
+    margin-bottom: 70px;
+    border: none;
+}
+
+.grid-principal .grid .btn-light {
+    display: inline-block;
+    font-weight: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: -96px;
+    margin-left: 40%;
+    margin-right: 30%;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 4px 22px;
+    background: var(--color-pc-200);
+    color: var(--color-wt);
+    border: solid 1px black;
+    transition: all .7s ease;
+}
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/* Extra */
+
+
+/*/////////////////*/
+
+
+/*////////////////*/
+
+.main-extra {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 200%;
+    background-color: var(--color-sc-200);
+}
+
+.main-extra .carousel_principal {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.main-extra h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-bk-200-);
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.main-extra p {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+    font-size: 16px;
+}
+
+.main-extra .extra_more .contenedor-extra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 100%;
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra:hover .box {
+    transform: rotateY(180deg);
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra .box .contentBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-pc-200);
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.main-extra .extra_more .contenedor-extra .card-extra .box .contentBx div {
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: linear-gradient(45deg, #D8B6A4, #31130286);
+    transform: translateZ(100px);
+}
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/* footer */
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+.footer-sitio {
+    background: var(--color-pc-200);
+    padding-top: 60px;
+}
+
+.footer-sitio h3 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+}
+
+.footer-sitio p {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--color-wt);
+}
+
+.copyright {
+    font-size: .5rem;
+}
+
+
+/** Sociales **/
+
+.sociales ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sci {
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    background: var(--color-pc-0);
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.sci li a img {
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+.sci li a:hover {
+    background: var(--color-sc-200);
+    transform: translateY(-10px);
+}
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+
+/* ----- MEDIA QUERIES ----- */
+
+
+/*/////////////////*/
+
+
+/*/////////////////*/
+
+@media (min-width: 1451px) and (max-width: 3000px) {
+    /* Encabezado */
+    .menu-mobile {
+        display: none;
+    }
+    .menu-bar-pc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+    }
+    .menu-principal-desk a,
+    .top-redes a {
+        display: flex;
+        padding: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 200px;
+        font-size: 0.876rem;
+        letter-spacing: 0;
+        line-height: 1.5em;
+        transition: all .3s ease;
+    }
+    /* Main */
+    .main {
+        width: 100%;
+        margin-top: 10px;
+        height: 40rem;
+    }
+    .main .banner-principal {
+        position: relative;
+        width: 100%;
+        height: 105vh;
+        background: var(--color-sc-200-);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -1rem;
+    }
+    .main .banner-principal .texto-banner .logos {
+        width: 75%;
+        margin-bottom: 20px;
+        z-index: 99;
+        margin: 0 auto;
+    }
+    .main img {
+        width: 55%;
+        height: auto;
+        margin-top: -60px;
+    }
+    .welcome img {
+        width: 25%;
+        height: 4%;
+        font-size: 300px;
+    }
+    /*Linea Temporal*/
+    .acerca_de {
+        padding-top: 100px;
+        width: 100%;
+        height: auto;
+        background: var(--color-pc-400);
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        width: 100%;
+        height: auto;
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+    .carousel-principal .description {
+        margin-bottom: -100px;
+        font-size: 25px;
+    }
+    .carousel-principal .carousel {
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 150px;
+        padding-bottom: 300px;
+    }
+    .carousel-indicators {
+        margin-bottom: -70px;
+    }
+    .carousel-principal .carousel {
+        margin-top: -500px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin-top: 300px;
+        color: red;
+    }
+    .carousel-principal .carousel .carousel-inner .carousel-item .carousel-caption a {
+        margin-top: -200px;
+    }
+    .carousel-principal .carousel .carousel-inner .carousel-item .description {
+        background-color: #2f1004d1;;
+        border-radius: 1.25rem;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 8rem;
+    }
+    .grid-principal .card {
+        height: auto;
+        background-color: var(--color-pc-400);
+        margin-bottom: 0px;
+    }
+    /* Extra */
+    .main-extra {
+        padding-top: 100px;
+    }
+    .main-extra .extra_more .contenedor-extra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* footer */
+    .footer-sitio p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1030px) and (max-width: 1450px) {
+    /* Encabezado */
+    .menu-mobile {
+        display: none;
+    }
+    .menu-bar-pc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+    }
+    .menu-principal-desk a,
+    .top-redes a {
+        display: flex;
+        padding: 0 10px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.876rem;
+        letter-spacing: 0;
+        line-height: 1.5em;
+        transition: all .3s ease;
+    }
+    /* Main */
+    .main .banner-principal {
+        position: relative;
+        width: 100%;
+        height: 105vh;
+        background: var(--color-sc-200-);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: -1rem;
+    }
+    .main {
+        height: 50rem;
+    }
+    .main img {
+        width: 55%;
+        height: auto;
+        margin-top: -100px;
+    }
+    .welcome img {
+        width: 75%;
+        height: 4%;
+        margin-top: -95px;
+    }
+    /*Linea Temporal*/
+    .acerca_de {
+        width: 100%;
+        height: auto;
+        padding-top: 32px;
+        background: var(--color-pc-400);
+        margin-top: -6rem;
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        width: 100%;
+        height: auto;
+        padding-top: -62px;
+        padding-bottom: 160px;
+    }
+
+    .carousel-principal .carousel {
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 300px;
+    }
+    .carousel-principal .carousel .carousel-inner .carousel-item .carousel-caption a {
+        margin-top: -150px;
+        padding: 0.3rem 2rem;
+        font-size: 1.2rem;
+    }
+    .carousel-principal .carousel .carousel-inner .carousel-item .description {
+        background-color: #2f1004d1;
+        color: white;
+        border-radius: 1.25rem;
+        font-size: 2rem;
+        margin-bottom: 9rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .carousel-principal h3 {
+        height: 52px;
+        padding-top: 16px;
+        margin-top: 6px;
+    }
+    .carousel-indicators {
+        margin-bottom: 50px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin-top: 50px;
+    }
+    .grid-principal .card {
+        height: auto;
+        background-color: var(--color-pc-400);
+        margin-bottom: 0px;
+    }
+    /* Extra */
+    .main-extra {
+        padding-top: 100px;
+    }
+    .main-extra h2 {
+        padding-top: 22px;
+        margin-top: -43px;
+    }
+    .main-extra .extra_more .contenedor-extra {
+        display: flex;
+        flex-direction: column;
+    }
+    /* footer */
+    .footer-sitio p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1030px) {
+    /* Encabezado */
+    .menu-bar-pc {
+        display: none;
+    }
+    .menu-mobile {
+        display: fixed;
+        margin: 0px 0px;
+    }
+    .menu-mobile .barra .logo-mini img {
+        width: 8%;
+        margin-left: 4rem;
+    }
+    .menu-mobile .menu-principal a,
+    .top-redes a {
+        display: flex;
+        padding: 8px 50px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.876rem;
+        letter-spacing: 0;
+        line-height: 1.5em;
+        transition: all .3s ease;
+    }
+    /* Main */
+    .main .banner-principal {
+        position: relative;
+        width: 100%;
+        height: 105vh;
+        background: var(--color-sc-200-);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        /* margin-top: 25rem; 
+        margin-bottom: 8rem;  */
+    }
+    .main {
+        font-size: 15px;
+        height: 60rem;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: -300px;
+    }
+    /* .welcome {
+        width: 25%;
+        height: 4%;
+        margin-top: 110px;
+    } */
+    .main .inicio .welcome {
+        padding: 220px 0px 0px 90px;
+        width: 100%;
+        height: 120vh;
+        background: var(--color-sc-200-);
+        margin-top: 5.5rem;
+    }
+    /*Linea Temporal*/
+    .acerca-de {
+        padding: 32px;
+    }
+    .acerca_de {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        background: var(--color-pc-400);
+    }
+    .acerca-de .logos img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        width: 100%;
+        height: auto;
+        padding-top: -62px;
+        padding-bottom: 150px;
+    }
+
+    .carousel-principal .carousel {
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: -250px;
+    }
+    .carousel-principal h3 {
+        height: 52px;
+        padding-top: 16px;
+        margin-top: 6px;
+    }
+    .carousel-principal .carousel .carousel-inner .carousel-item .description {
+        background-color: #2f1004d1;;
+        color: white;
+        border-radius: 1.25rem;
+        font-size: 1.2rem;
+        margin-bottom: 4rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    .carousel-indicators {
+        margin-bottom: -30px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        margin-top: 10px;
+    }
+    .grid-principal .card {
+        height: auto;
+        background-color: var(--color-pc-400);
+        margin-bottom: 0px;
+    }
+    /* Extra */
+    .main-extra h2 {
+        padding-top: 22px;
+        margin-top: -43px;
+    }
+    .main-extra .extra_more .contenedor-extra {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 781px) {
+    /* Encabezado */
+    .menu-bar-pc {
+        display: none;
+    }
+    .menu-mobile {
+        display: fixed;
+        margin: 0px auto;
+    }
+
+    .menu-mobile .menu-principal {
+        width: auto;
+    }
+    .menu-mobile .barra .logo-mini img {
+        width: 8%;
+        margin-left: 2rem;
+    }
+    .menu-mobile .menu-principal a,
+    .top-redes a {
+        display: flex;
+        padding: 4px 232px 4px 32px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 0.876rem;
+        letter-spacing: 0;
+        line-height: 1.5em;
+        transition: all .3s ease;
+    }
+    /* Main */
+    .main {
+        width: auto;
+        height: 40rem;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: -110px;
+    }
+    .main .banner-principal .scroll-suave {
+        padding-top: -50px;
+    }
+    /*Linea Temporal*/
+    .acerca_de {
+        height: auto;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 40px;
+        background: var(--color-pc-400);
+    }
+    .acerca-de h2 {
+        padding-top: 36px;
+    }
+    .acerca-de .logos img {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 5px;
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 32px;
+        margin: 0px 0px;
+    }
+    .carousel-principal h3 {
+        padding-top: 86px;
+    }
+    .carousel-principal .carousel {
+        height: 50%;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Grid */
+    .grid-principal {
+        padding-bottom: 64px;
+    }
+    .grid-principal .card {
+        height: auto;
+        padding: 0px 0px;
+        background-color: var(--color-pc-400);
+        margin-bottom: 0px;
+    }
+    /* Extra */
+    .main-extra {
+        width: 100%;
+        margin: 0px 0px;
+    }
+    .main-extra h2 {
+        padding-top: 18px;
+    }
+    .contenedor-extra .card-extra {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* footer */
+    .footer-sitio {
+        margin: 0px 0px;
+    }
+    
+}
+
+@media (min-width: 381px) and (max-width: 432px) {
+    /* Encabezado */
+    .menu-bar-pc {
+        display: none;
+    }
+    .menu-mobile {
+        display: fixed;
+    }
+    .menu-mobile .menu-principal {
+        top: 74px;
+    }
+    /* Main */
+    .main img {
+        width: 75%;
+        height: auto;
+        margin-top: -10px;
+    }
+    /*Linea Temporal*/
+    .acerca_de {
+        padding-top: 25px;
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        height: auto;
+        padding-bottom: 32px;
+    }
+    .carousel-principal h3 {
+        padding-top: 20px;
+    }
+    .carousel-principal .carousel {
+        height: 100%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Grid */
+    .grid-principal .card {
+        height: auto;
+        background-color: var(--color-pc-400);
+        margin-bottom: 90px;
+    }
+    /* Extra */
+    .main-extra h2 {
+        padding-top: 24px;
+    }
+    /* footer */
+    .footer-sitio h3 {
+        padding-top: 25px;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 380px) {
+    /* Encabezado */
+    .menu-bar-pc {
+        display: none;
+    }
+    .menu-mobile {
+        width: 99%;
+        display: block;
+    }
+    .menu-mobile .menu-principal {
+        top: 64px;
+    }
+    /* Main */
+    .main img {
+        width: 85%;
+        height: auto;
+        margin-top: -30px;
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        padding-top: 64px;
+        height: auto;
+        padding-bottom: 32px;
+    }
+    .carousel-principal .carousel {
+        height: 100%;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Extra */
+    .main-extra {
+        padding-top: 60px;
+        padding-bottom: 64px;
+    }
+    /* footer */
+    .footer-sitio {
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 331px) {
+    /* Encabezado */
+    .menu-bar-pc {
+        display: none;
+    }
+    .menu-mobile {
+        width: 100%;
+    }
+    .menu-mobile .menu-principal {
+        top: 74px;
+        width: 15rem;
+        padding-left: 1rem;
+    }
+    /* Main */
+    .main img {
+        width: 90%;
+        height: 90%;
+        margin-top: -40px;
+    }
+    /*Linea Temporal*/
+    .acerca_de {
+        padding-top: 25px;
+        margin-top: -4rem;
+    }
+    /* Slider principal - Proyectos */
+    .carousel-principal {
+        height: auto;
+        padding-bottom: 64px;
+    }
+    .carousel-principal h3 {
+        padding-top: 20px;
+    }
+    .carousel-principal .carousel {
+        height: auto;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* Extra */
+    .main-extra {
+        padding-bottom: 64px;
+    }
+    .main-extra h2 {
+        padding-top: 24px;
+    }
+    /* footer */
+    .footer-sitio h3 {
+        padding-top: 25px;
+    }
+}
