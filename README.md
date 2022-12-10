@@ -12,3 +12,5 @@ Conceptos Desarrollados:
 - CssGrid, FlexBox, Animacion en Css :triangular_ruler:
 - Experiencia UI :globe_with_meridians:
 - Lógica con Js :high_brightness: 
+
+![Home](./img/view-portfolio.png)
