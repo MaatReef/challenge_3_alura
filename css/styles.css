@@ -273,7 +273,7 @@ body {
     width: 100%;
     height: 120vh;
     background: transparent;
-    margin-top: -4.5rem;
+    margin-top: -2.5rem;
 }
 
 .main .inicio .welcome h1 {
@@ -377,9 +377,9 @@ body {
 }
 
 .main .inicio .welcome p {
-    font-size: 1.5em;
+    font-size: 1.6em;
     font-family: 'Ubuntu', sans-serif;
-    color: var(--color-wt);
+    color: var(--color-bk-200-);
     opacity: 0;
     animation: slide_left 0.5s linear forwards;
     animation-delay: 1.3s;
@@ -423,8 +423,8 @@ body {
 .main .banner-principal {
     position: relative;
     width: 100%;
-    height: 100vh;
-    margin-top: 2rem;
+    height: 130vh;
+    margin-top: -2rem;
     background: transparent;
     background-position: center;
     background-size: cover;
@@ -967,12 +967,12 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
     .main .banner-principal {
         position: relative;
         width: 100%;
-        height: 105vh;
+        height: 100vh;
         background: transparent;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        margin-top: -5rem;
+        margin-top: 2rem;
         margin-bottom: 4rem;
             
     }
@@ -1093,16 +1093,21 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
-        margin-top: -1rem;
+        margin-top: -8rem;
     }
     .main {
         height: 50rem;
+    }
+    .main .banner-principal {
+        height: 100vh;
+        margin-top: -2rem;
     }
     .main img {
         width: 55%;
         height: auto;
         margin-top: -100px;
     }
+    
     .welcome img {
         width: 75%;
         height: 4%;
@@ -1181,7 +1186,81 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
         font-size: 1.2em;
     }
 }
+@media (min-width: 781px) and (max-width: 1030px) {
+    .main {
+        font-size: 15px;
+        height: 50rem;
+        margin-top: 4rem;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: -100px;
+    }
+    .main .banner-principal {
+        position: relative;
+        width: 100%;
+        height: 130vh;
+        background: transparent;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        /* margin-top: 25rem; 
+        margin-bottom: 8rem;  */
+    }   
+}
+@media (min-width: 899px) and (max-width: 1030px) {
+    .main {
+        font-size: 15px;
+        height: 50rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: 100px;
+    }
+    .main .banner-principal {
+        position: relative;
+        width: 100%;
+        height: 130vh;
+        background: transparent;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        /* margin-top: 25rem; 
+        margin-bottom: 8rem;  */
+    }
 
+
+}
+@media (min-width: 781px) and (max-width: 899px) {
+    .main {
+        font-size: 15px;
+        height: 50rem;
+        margin-top: -20rem;
+        margin-bottom: 20rem;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: 0px;
+    }
+    .main .banner-principal {
+        position: relative;
+        width: 100%;
+        height: 130vh;
+        background: transparent;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        /* margin-top: 25rem; 
+        margin-bottom: 8rem;  */
+    }
+
+}
+    
 @media (min-width: 781px) and (max-width: 1030px) {
     /* Encabezado */
     .menu-bar-pc {
@@ -1208,26 +1287,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
         transition: all .3s ease;
     }
     /* Main */
-    .main .banner-principal {
-        position: relative;
-        width: 100%;
-        height: 155vh;
-        background: transparent;
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-        /* margin-top: 25rem; 
-        margin-bottom: 8rem;  */
-    }
-    .main {
-        font-size: 15px;
-        height: 50rem;
-    }
-    .main img {
-        width: 50%;
-        height: auto;
-        margin-top: -300px;
-    }
+    /* .main{
+        height: 300vh;
+    } */
+    
     /* .welcome {
         width: 25%;
         height: 4%;
@@ -1309,6 +1372,52 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
     }
 }
 
+@media (min-width: 431px) and (max-width: 550px) {
+    /* Main */
+    .main {
+        width: auto;
+        height: 40rem;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0rem;
+        margin-bottom: 5rem;
+    }
+    .main .banner-principal {
+        height: 30vh;
+        margin-top: 2rem;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 781px) {
+    
+    .main .inicio {
+        height: 40rem;
+        margin-top: -2rem;
+    }
+    /* Main */
+    .main {
+        width: auto;
+        height: 50rem;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: 0rem;
+        margin-bottom: -12rem;
+    }
+    .main .banner-principal {
+        height: 0rem;
+        margin-top: 0rem;
+    }
+    .main img {
+        width: 50%;
+        height: auto;
+        margin-top: 10rem;
+    }
+}
 @media (min-width: 431px) and (max-width: 781px) {
     /* Encabezado */
     .menu-bar-pc {
@@ -1338,18 +1447,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
         line-height: 1.5em;
         transition: all .3s ease;
     }
-    /* Main */
-    .main {
-        width: auto;
-        height: 40rem;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    .main img {
-        width: 50%;
-        height: auto;
-        margin-top: 0px;
-    }
+
     .main .banner-principal .scroll-suave {
         padding-top: -50px;
     }
@@ -1405,6 +1503,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
         width: 100%;
         margin: 0px 0px;
     }
+    .main .banner-principal {
+        height: 100vh;
+        margin-top: -4rem;
+    }
     .main-extra h2 {
         padding-top: 18px;
     }
@@ -1430,6 +1532,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
     .menu-mobile .menu-principal {
         top: 74px;
     }
+
     /* Main */
     .main img {
         width: 75%;
