@@ -610,9 +610,44 @@ p {
 
 
 /*/////////////////*/
-
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--color-sc-0);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-pc-0);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid var(--color-pc-0);  /* creates padding around scroll thumb */
+}
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-sc-0) var(--color-pc-0);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 2px;
+    height: 8px;
+    
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--color-sc-200-);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    overflow-y: hidden;
+    background-color: var(--color-sc-0);
+    border-radius: 20px;
+    border: 3px solid var(--color-pc-0);
+  }
 .carrusel {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     margin-bottom: 20rem;
@@ -620,10 +655,10 @@ p {
 
 .carrusel-items1, .carrusel-items2, .carrusel-items3, .carrusel-items4 {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
     padding: 30px 0px;
-    height: 100vh;
+    height: 70vh;
 }
 
 .carrusel-item {
@@ -642,8 +677,8 @@ p {
     object-fit: cover;
 }
 
-.carrusel-item4:hover {
-    transform: scale(1.1);
+.carrusel-item:hover {
+    transform: scale(1.01);
     transition: 0.2s ;
 }
 
