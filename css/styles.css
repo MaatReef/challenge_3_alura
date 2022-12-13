@@ -647,7 +647,7 @@ body::-webkit-scrollbar-thumb {
     border: 3px solid var(--color-pc-0);
   }
 .carrusel {
-    height: 90vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     margin-bottom: 20rem;
@@ -658,7 +658,7 @@ body::-webkit-scrollbar-thumb {
     overflow-x: auto;
     overflow-y: hidden;
     padding: 30px 0px;
-    height: 80vh;
+    height: 72vh;
 }
 
 .carrusel-item {
